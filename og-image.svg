@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Sandeep Kondury  The Persistence of Narrative">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Sandeep Kondury — The Persistence of Narrative">
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#221c44"/>
@@ -70,9 +70,9 @@
   </g>
 
   <!-- copy -->
-  <text x="600" y="168" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" letter-spacing="8" fill="rgba(249,241,221,0.78)">VENTURE INVESTOR � BUILDER � AUSTIN</text>
+  <text x="600" y="168" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" letter-spacing="8" fill="rgba(249,241,221,0.78)">VENTURE INVESTOR · BUILDER · AUSTIN</text>
   <text x="600" y="280" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="500" fill="#f9f1dd">Sandeep Kondury</text>
-  <text x="600" y="350" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-style="italic" fill="#f4cf9a">Markets dream in language long before they speak in numbers.</text>
-  <text x="600" y="410" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="rgba(249,241,221,0.8)">Founder of feat. � TEDx � TED Editors Pick</text>
+  <text x="600" y="350" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-style="italic" fill="#f4cf9a">“Markets dream in language long before they speak in numbers.”</text>
+  <text x="600" y="410" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="rgba(249,241,221,0.8)">Founder of feat. · TEDx · TED Editor’s Pick</text>
   <text x="1140" y="590" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-style="italic" fill="rgba(43,32,19,0.55)">saandeepkondury.github.io</text>
 </svg>
