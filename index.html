@@ -7,7 +7,7 @@
   <meta name="description" content="Sandeep Kondury is a venture investor and builder in Austin, Texas. Founder & CEO of feat., Sr. Venture Associate at Startup Haven, TEDx speaker (TED Editor's Pick). Ideas on lingo leverage and narrative-market fit." />
   <meta name="author" content="Sandeep Kondury" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <meta name="revised" content="2026-07-24-v4" />
+  <meta name="revised" content="2026-07-24-v5" />
   <meta name="theme-color" content="#221c44" />
   <meta name="color-scheme" content="light" />
   <meta name="keywords" content="Sandeep Kondury, feat., lingo leverage, narrative-market fit, Startup Haven, TEDxSouthCongress, TED Editor's Pick, venture investor, Austin founder, marketplace" />
@@ -691,11 +691,17 @@
       overflow: hidden;
     }
 
-    .outro .wrap { padding-bottom: 3rem; }
+    .outro .wrap { padding-top: clamp(6rem, 14vw, 9rem); padding-bottom: 3rem; }
 
     .outro .sec-label { color: var(--sky-pale); }
 
     .outro .sec-title { color: var(--cream); }
+
+    .outro .sec-title em {
+      font-style: italic;
+      font-weight: 600;
+      color: #ffe6b0;
+    }
 
     .outro .door {
       position: absolute;
