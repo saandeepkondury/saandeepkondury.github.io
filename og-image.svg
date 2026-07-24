@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Sandeep Kondury  The Persistence of Narrative">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#221c44"/>
+      <stop offset="34%" stop-color="#4b3260"/>
+      <stop offset="58%" stop-color="#a05c6b"/>
+      <stop offset="82%" stop-color="#e8a45e"/>
+      <stop offset="100%" stop-color="#f4cf9a"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="42%" r="50%">
+      <stop offset="0%" stop-color="#fbe0ac"/>
+      <stop offset="55%" stop-color="#f2b96d"/>
+      <stop offset="72%" stop-color="rgba(242,185,109,0)"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.2"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#sky)"/>
+
+  <!-- stars -->
+  <g fill="#fff5dc" opacity="0.85">
+    <circle cx="140" cy="70" r="1.4"/>
+    <circle cx="320" cy="48" r="1.1"/>
+    <circle cx="510" cy="96" r="1.6"/>
+    <circle cx="680" cy="40" r="1.2"/>
+    <circle cx="860" cy="78" r="1.5"/>
+    <circle cx="1040" cy="56" r="1.1"/>
+    <circle cx="220" cy="130" r="1"/>
+    <circle cx="940" cy="120" r="1.3"/>
+    <circle cx="430" cy="30" r="1"/>
+  </g>
+
+  <!-- clouds -->
+  <g fill="rgba(249,241,221,0.55)">
+    <ellipse cx="180" cy="150" rx="110" ry="22"/>
+    <ellipse cx="260" cy="138" rx="70" ry="16"/>
+    <ellipse cx="980" cy="170" rx="120" ry="20"/>
+    <ellipse cx="1080" cy="158" rx="60" ry="14"/>
+  </g>
+
+  <!-- sun -->
+  <circle cx="600" cy="520" r="150" fill="url(#sun)" opacity="0.9"/>
+
+  <!-- melting clock -->
+  <g transform="translate(90,430)">
+    <rect x="0" y="18" width="170" height="6" rx="3" fill="#3d2c1c"/>
+    <path d="M42 14
+             C 42 0, 128 0, 130 16
+             C 132 34, 135 50, 127 70
+             C 120 88, 108 96, 98 108
+             C 93 114, 91 126, 86 126
+             C 80 126, 80 114, 75 104
+             C 66 90, 50 78, 46 54
+             C 43 36, 41 24, 42 14 Z"
+          fill="#f6ecd6" stroke="#3d2c1c" stroke-width="3" stroke-linejoin="round"/>
+    <g stroke="#3d2c1c" stroke-width="2.5" stroke-linecap="round">
+      <line x1="86" y1="10" x2="86" y2="18"/>
+      <line x1="120" y1="28" x2="114" y2="32"/>
+      <line x1="122" y1="56" x2="115" y2="54"/>
+      <line x1="54" y1="54" x2="61" y2="52"/>
+      <line x1="52" y1="28" x2="58" y2="32"/>
+    </g>
+    <g stroke="#3d2c1c" stroke-linecap="round" fill="none">
+      <path d="M86 48 C 82 56, 76 62, 68 66" stroke-width="3.5"/>
+      <path d="M86 48 C 90 58, 93 68, 92 78" stroke-width="3.5"/>
+    </g>
+    <circle cx="86" cy="48" r="3.5" fill="#3d2c1c"/>
+  </g>
+
+  <!-- copy -->
+  <text x="600" y="168" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" letter-spacing="8" fill="rgba(249,241,221,0.78)">VENTURE INVESTOR · BUILDER · AUSTIN</text>
+  <text x="600" y="280" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="500" fill="#f9f1dd">Sandeep Kondury</text>
+  <text x="600" y="350" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-style="italic" fill="#f4cf9a">Markets dream in language long before they speak in numbers.</text>
+  <text x="600" y="410" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="rgba(249,241,221,0.8)">Founder of feat. · TEDx · TED Editors Pick</text>
+  <text x="1140" y="590" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="16" font-style="italic" fill="rgba(43,32,19,0.55)">saandeepkondury.github.io</text>
+</svg>
