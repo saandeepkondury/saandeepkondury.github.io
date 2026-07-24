@@ -645,7 +645,17 @@
       font-style: italic;
       color: var(--ink-soft);
       font-size: clamp(0.8rem, 1.6vw, 1.05rem);
-      transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+      text-decoration: none;
+      transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1), color 0.3s ease, background 0.3s ease;
+    }
+
+    a.empty-frame.hung {
+      color: var(--ink);
+      background: linear-gradient(180deg, rgba(249, 241, 221, 0.92), rgba(246, 236, 214, 0.7));
+    }
+
+    a.empty-frame.hung:hover {
+      color: var(--sky-deep);
     }
 
     .empty-frame:nth-child(1) { transform: rotate(-1.6deg) translateY(0.6rem); }
@@ -1022,7 +1032,14 @@
         The frames are already up.
       </p>
       <div class="frames reveal">
-        <div class="empty-frame"><span>a future essay</span></div>
+        <a
+          class="empty-frame hung"
+          href="https://medium.com/@sandeepkondury/how-startups-become-hubs-and-why-investors-should-listen-before-the-metrics-arrive-00fc8ebc323a"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>How Startups Become Hubs</span>
+        </a>
         <div class="empty-frame"><span>a future talk</span></div>
         <div class="empty-frame"><span>a future build</span></div>
       </div>
@@ -1046,7 +1063,6 @@
         <a href="https://x.com/sandeepkondury">X</a>
         <a href="https://www.instagram.com/sandeep.kondury/">Instagram</a>
         <a href="https://github.com/saandeepkondury">GitHub</a>
-        <a href="https://startuphaven.com">Startup Haven</a>
       </div>
       <div class="colophon">
         <span>© <span id="y"></span> Sandeep Kondury · Austin, TX</span>
