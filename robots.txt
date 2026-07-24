@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saandeepkondury.github.io/sitemap.xml
