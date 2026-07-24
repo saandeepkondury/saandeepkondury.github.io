@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sandeep Kondury — Founder of feat. | Austin, TX</title>
-  <meta name="description" content="Sandeep Kondury is the founder and CEO of feat., based in Austin, Texas. Startup Haven advisor. TED Editor's Pick. Featured marketing, lingo leverage, and early-stage venture." />
+  <meta name="description" content="Sandeep Kondury is the founder and CEO of feat. in Austin, Texas. Sr. Venture Associate at Startup Haven. TED Editor's Pick. Featured marketing, lingo leverage, and early-stage venture." />
   <meta name="author" content="Sandeep Kondury" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://saandeepkondury.github.io/" />
@@ -28,18 +28,11 @@
     "@type": "Person",
     "name": "Sandeep Kondury",
     "url": "https://saandeepkondury.github.io/",
-    "image": "https://saandeepkondury.github.io/og-placeholder.svg",
-    "jobTitle": "Founder & CEO",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "feat.",
-      "url": "https://feat.press"
-    },
-    "affiliation": {
-      "@type": "Organization",
-      "name": "Startup Haven",
-      "url": "https://startuphaven.com"
-    },
+    "jobTitle": ["Founder & CEO", "Sr. Venture Associate"],
+    "worksFor": [
+      { "@type": "Organization", "name": "feat.", "url": "https://feat.press" },
+      { "@type": "Organization", "name": "Startup Haven Ventures", "url": "https://startuphaven.com" }
+    ],
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Austin",
@@ -47,13 +40,18 @@
       "addressCountry": "US"
     },
     "email": "mailto:sandeepkondury@gmail.com",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Washington"
+    },
+    "knowsLanguage": ["English", "Hindi", "Telugu", "French"],
     "sameAs": [
       "https://www.linkedin.com/in/sandeep-kondury",
       "https://github.com/saandeepkondury",
       "https://feat.press",
       "https://startuphaven.com"
     ],
-    "description": "Sandeep Kondury is the founder and CEO of feat., based in Austin, Texas. He works on featured marketing, lingo leverage, and early-stage venture with Startup Haven. TED Editor's Pick."
+    "description": "Sandeep Kondury is the founder and CEO of feat., based in Austin, Texas. Sr. Venture Associate at Startup Haven Ventures. TED Editor's Pick. Focused on featured marketing, lingo leverage, and early-stage venture."
   }
   </script>
 
@@ -64,6 +62,7 @@
       --paper: #f7f3eb;
       --accent: #0f5c4c;
       --line: rgba(26, 24, 20, 0.12);
+      --card: rgba(255, 255, 255, 0.45);
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -80,7 +79,7 @@
     }
 
     main {
-      max-width: 42rem;
+      max-width: 44rem;
       margin: 0 auto;
       padding: clamp(3rem, 8vw, 5.5rem) clamp(1.25rem, 4vw, 2rem) 4rem;
     }
@@ -97,11 +96,22 @@
     .lede {
       font-size: 1.15rem;
       color: var(--muted);
-      max-width: 34rem;
-      margin-bottom: 2rem;
+      max-width: 36rem;
+      margin-bottom: 1.5rem;
     }
 
     .lede strong { color: var(--ink); font-weight: 600; }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.25rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+    }
+
+    .meta span { white-space: nowrap; }
 
     .cta {
       display: flex;
@@ -126,32 +136,95 @@
     }
 
     section {
-      padding-top: 1.75rem;
+      padding-top: 1.85rem;
       border-top: 1px solid var(--line);
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.35rem;
     }
 
     h2 {
       font-family: Fraunces, Georgia, serif;
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       font-weight: 500;
-      margin-bottom: 0.85rem;
+      margin-bottom: 0.9rem;
     }
 
     p, li { color: var(--muted); }
     p + p { margin-top: 0.85rem; }
 
-    ul {
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+      margin: 1.25rem 0 0;
+    }
+
+    @media (max-width: 560px) {
+      .stats { grid-template-columns: 1fr; }
+    }
+
+    .stat {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 0.45rem;
+      padding: 0.9rem 1rem;
+    }
+
+    .stat strong {
+      display: block;
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.35rem;
+      color: var(--ink);
+      line-height: 1.2;
+      margin-bottom: 0.2rem;
+    }
+
+    .stat span { font-size: 0.9rem; }
+
+    .role {
+      margin-bottom: 1.15rem;
+    }
+
+    .role:last-child { margin-bottom: 0; }
+
+    .role h3 {
+      font-size: 1.02rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .role .when {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin: 0.15rem 0 0.4rem;
+    }
+
+    ul.focus {
       list-style: none;
       display: grid;
       gap: 0.55rem;
     }
 
-    ul li::before {
+    ul.focus li::before {
       content: "→";
       color: var(--accent);
       margin-right: 0.5rem;
       font-weight: 600;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-top: 0.35rem;
+    }
+
+    .chips span {
+      font-size: 0.88rem;
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0.28rem 0.7rem;
+      background: var(--card);
     }
 
     .links {
@@ -181,13 +254,20 @@
   <main>
     <h1>Sandeep Kondury</h1>
     <p class="lede">
-      Founder &amp; CEO of <strong>feat.</strong> · Austin, Texas · Startup Haven · TED Editor's Pick.
-      Building distribution for founders and creators.
+      Founder &amp; CEO of <strong>feat.</strong> · Sr. Venture Associate at
+      <strong>Startup Haven</strong> · TED Editor's Pick.
+      Building distribution for founders and creators from Austin, Texas.
     </p>
+    <div class="meta">
+      <span>Austin, TX</span>
+      <span>English · Hindi · Telugu</span>
+      <span>sandeepkondury@gmail.com</span>
+    </div>
 
     <div class="cta">
       <a href="https://feat.press">Visit feat.</a>
-      <a class="secondary" href="mailto:sandeepkondury@gmail.com">Email Sandeep</a>
+      <a class="secondary" href="https://www.linkedin.com/in/sandeep-kondury">LinkedIn</a>
+      <a class="secondary" href="mailto:sandeepkondury@gmail.com">Email</a>
     </div>
 
     <section>
@@ -196,36 +276,137 @@
         Sandeep Kondury is an Austin-based founder and early-stage operator.
         He is the founder and CEO of feat., an AI-powered distribution platform
         that helps founders and creators get placed in trusted newsletters,
-        podcasts, communities, and creator channels.
+        podcasts, communities, and creator channels — so growth compounds across
+        human and AI discovery.
       </p>
       <p>
-        He works with Startup Haven and focuses on featured marketing,
-        lingo leverage, and narrative-driven growth for early-stage companies.
+        As Sr. Venture Associate at Startup Haven Ventures, he works with
+        venture-scale founders on early-stage strategy, capital, and systems.
+        His thesis centers on <strong>lingo leverage</strong> and
+        <strong>featured marketing</strong>: when your audience starts speaking
+        your language, you've already won.
       </p>
+      <p>
+        Previously, Sandeep built accelerator operations and venture pipelines
+        at Astralabs, advised founders on financial models at Forecastr, and
+        contributed to portfolio and founder support across Startup Haven's
+        network. He is a TED Editor's Pick speaker and a University of Washington
+        alum (Foster / Lavin entrepreneurship community).
+      </p>
+
+      <div class="stats">
+        <div class="stat">
+          <strong>1,200+</strong>
+          <span>startups evaluated</span>
+        </div>
+        <div class="stat">
+          <strong>$10M+</strong>
+          <span>early-stage capital deployed</span>
+        </div>
+        <div class="stat">
+          <strong>$24M</strong>
+          <span>Seed–Series A raises guided</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Current work</h2>
+      <div class="role">
+        <h3>Founder &amp; CEO — feat.</h3>
+        <p class="when">Jan 2026 – Present · Austin, TX</p>
+        <p>
+          Building funnel infrastructure for the creator economy: helping creators
+          and brands turn social audiences into revenue through natively social
+          distribution. Leading product, GTM, and creator partnerships with a
+          founder-led strategy rooted in the Lingo Leverage framework. Raised
+          pre-seed funding.
+        </p>
+      </div>
+      <div class="role">
+        <h3>Sr. Venture Associate — Startup Haven Ventures</h3>
+        <p class="when">Feb 2024 – Present</p>
+        <p>
+          Supporting early-stage founders and investors across Startup Haven —
+          including data advisory / ambassador work in Austin — with a focus on
+          systems, diligence, and narrative-driven growth.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Previously</h2>
+      <div class="role">
+        <h3>Financial Analyst — Forecastr</h3>
+        <p class="when">2023 – 2024 · Austin, TX</p>
+        <p>
+          Advised founders on financial forecasting and strategies to prepare
+          for investment and growth.
+        </p>
+      </div>
+      <div class="role">
+        <h3>CEO's Office Associate &amp; Venture Analyst — Astralabs</h3>
+        <p class="when">2021 – 2023 · Austin, TX</p>
+        <p>
+          Built operational systems for a large accelerator program; sourced and
+          evaluated startups; scaled mentorship operations; launched an Advisory
+          Board product; authored SOP playbooks for diligence and founder
+          engagement. Helped guide financial models that supported Seed–Series A
+          raises totaling $24M.
+        </p>
+      </div>
+      <div class="role">
+        <h3>Associate Manager — Sunshine Investments</h3>
+        <p class="when">2020 – 2021 · Hyderabad</p>
+        <p>
+          Led cross-functional analysis with accounting and engineering
+          stakeholders to solve critical internal systems issues.
+        </p>
+      </div>
+      <div class="role">
+        <h3>University of Washington</h3>
+        <p class="when">Seattle · Foster / Lavin entrepreneurship · leadership</p>
+        <p>
+          Lavin Entrepreneurship community member. Mentor with UW Leaders;
+          Mary Gates Leadership Scholarship; Husky Leadership Certificate;
+          Student Life Division speaker. Early venture analyst internship with
+          Startup Haven.
+        </p>
+      </div>
     </section>
 
     <section>
       <h2>Focus</h2>
-      <ul>
-        <li>Featured marketing &amp; founder distribution</li>
-        <li>Lingo leverage and narrative-market fit</li>
-        <li>Early-stage venture and accelerator operations</li>
+      <ul class="focus">
+        <li>Featured marketing — placement in trusted media and communities</li>
+        <li>Lingo leverage — language as a leading indicator of startup outcomes</li>
+        <li>Narrative-market fit — cultural traction before financial metrics catch up</li>
+        <li>Early-stage venture, accelerator ops, and founder distribution</li>
       </ul>
+      <div class="chips" style="margin-top: 1rem;">
+        <span>feat.</span>
+        <span>Startup Haven</span>
+        <span>TED Editor's Pick</span>
+        <span>Creator economy</span>
+        <span>Venture</span>
+        <span>Distribution</span>
+      </div>
     </section>
 
     <section>
       <h2>Find Sandeep Kondury online</h2>
       <div class="links">
-        <a href="https://feat.press">feat.press</a>
-        <a href="https://www.linkedin.com/in/sandeep-kondury">LinkedIn — Sandeep Kondury</a>
-        <a href="https://github.com/saandeepkondury">GitHub — saandeepkondury</a>
+        <a href="https://feat.press">feat.press — company</a>
+        <a href="https://www.linkedin.com/in/sandeep-kondury">LinkedIn — linkedin.com/in/sandeep-kondury</a>
+        <a href="https://github.com/saandeepkondury">GitHub — github.com/saandeepkondury</a>
         <a href="https://startuphaven.com">Startup Haven</a>
         <a href="mailto:sandeepkondury@gmail.com">sandeepkondury@gmail.com</a>
       </div>
     </section>
 
     <footer>
-      © <span id="y"></span> Sandeep Kondury · Austin, TX
+      © <span id="y"></span> Sandeep Kondury · Austin, TX ·
+      <a href="https://saandeepkondury.github.io/" style="color:inherit;">saandeepkondury.github.io</a>
     </footer>
   </main>
   <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
