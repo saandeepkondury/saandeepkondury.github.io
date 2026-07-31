@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Sandeep Kondury">
+  <title>Sandeep Kondury</title>
+  <defs>
+    <linearGradient id="dusk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#221c44"/>
+      <stop offset="0.34" stop-color="#4b3260"/>
+      <stop offset="0.66" stop-color="#a05c6b"/>
+      <stop offset="1" stop-color="#e8a45e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#dusk)"/>
+
+  <circle cx="256" cy="256" r="170" fill="#f9f1dd"/>
+  <circle cx="256" cy="256" r="142" fill="none" stroke="#c2a67c" stroke-width="9" opacity="0.55"/>
+
+  <g stroke="#2b2013" stroke-width="19" stroke-linecap="round">
+    <line x1="256" y1="102" x2="256" y2="134"/>
+    <line x1="410" y1="256" x2="378" y2="256"/>
+    <line x1="256" y1="410" x2="256" y2="378"/>
+    <line x1="102" y1="256" x2="134" y2="256"/>
+  </g>
+
+  <!-- the hands sag: the Dalí reference the melt itself can't carry at 16px -->
+  <g stroke="#2b2013" stroke-width="24" stroke-linecap="round" fill="none">
+    <path d="M256 256 C 222 230, 192 212, 164 202"/>
+    <path d="M256 256 C 274 294, 286 330, 278 362"/>
+  </g>
+  <circle cx="256" cy="256" r="22" fill="#2b2013"/>
+</svg>

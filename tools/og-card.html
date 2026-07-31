@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>OG card source — 1200×630</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=block" rel="stylesheet" />
+<style>
+  :root {
+    --sky-deep: #221c44;
+    --sky-plum: #4b3260;
+    --sky-rose: #a05c6b;
+    --sky-glow: #e8a45e;
+    --sky-pale: #f4cf9a;
+    --sand: #ecdfc4;
+    --ink: #2b2013;
+    --cream: #f9f1dd;
+    --serif: "Cormorant Garamond", Georgia, serif;
+    --body: "Newsreader", Georgia, serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+
+  .card {
+    position: relative;
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    background: linear-gradient(
+      180deg,
+      var(--sky-deep) 0%,
+      #2e2350 18%,
+      var(--sky-plum) 36%,
+      #6d4265 50%,
+      var(--sky-rose) 62%,
+      #c47a62 74%,
+      var(--sky-glow) 84%,
+      var(--sky-pale) 94%,
+      var(--sand) 100%
+    );
+    font-kerning: normal;
+    text-rendering: geometricPrecision;
+  }
+
+  /* ---- sky ---- */
+  .stars { position: absolute; inset: 0 0 60% 0; }
+  .stars i {
+    position: absolute;
+    background: #fff5dc;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(255, 245, 220, 0.9);
+  }
+
+  .sun {
+    position: absolute;
+    right: 130px;
+    bottom: 36px;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle at 50% 50%,
+      #fde8c0 0%,
+      #f8cf94 26%,
+      rgba(242, 185, 109, 0.66) 44%,
+      rgba(232, 164, 94, 0.28) 62%,
+      rgba(232, 164, 94, 0) 76%
+    );
+  }
+
+  .cloud {
+    position: absolute;
+    background: rgba(249, 241, 221, 0.42);
+    border-radius: 50%;
+    filter: blur(9px);
+  }
+
+  /* ---- copy ---- */
+  .copy {
+    position: absolute;
+    left: 88px;
+    top: 128px;
+    width: 640px;
+    z-index: 3;
+  }
+
+  .kicker {
+    font-family: var(--serif);
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: rgba(249, 241, 221, 0.74);
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 86px;
+    line-height: 1;
+    letter-spacing: 0.005em;
+    color: var(--cream);
+    margin-top: 22px;
+    text-shadow: 0 2px 24px rgba(34, 28, 68, 0.4);
+  }
+
+  .rule {
+    width: 78px;
+    height: 1.5px;
+    margin: 30px 0;
+    background: linear-gradient(90deg, rgba(244, 207, 154, 0.95), rgba(244, 207, 154, 0));
+  }
+
+  .thesis {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 35px;
+    line-height: 1.3;
+    color: var(--sky-pale);
+    max-width: 600px;
+    text-shadow: 0 2px 20px rgba(34, 28, 68, 0.35);
+  }
+
+  .roles {
+    margin-top: 32px;
+    font-family: var(--body);
+    font-size: 19px;
+    letter-spacing: 0.07em;
+    color: rgba(249, 241, 221, 0.85);
+  }
+
+  .roles em { font-style: italic; color: var(--cream); }
+  .roles span { opacity: 0.5; padding: 0 8px; }
+
+  .url {
+    position: absolute;
+    left: 90px;
+    bottom: 42px;
+    z-index: 3;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 21px;
+    letter-spacing: 0.04em;
+    color: rgba(43, 32, 19, 0.62);
+  }
+
+  /* ---- melting clock ---- */
+  .clock {
+    position: absolute;
+    right: 96px;
+    bottom: -4px;
+    width: 316px;
+    z-index: 2;
+    transform: rotate(-1.5deg);
+    filter: drop-shadow(16px 12px 20px rgba(43, 32, 19, 0.38));
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="stars">
+      <i style="left:6%;  top:14%; width:3px;   height:3px;   opacity:.9"></i>
+      <i style="left:14%; top:31%; width:2px;   height:2px;   opacity:.6"></i>
+      <i style="left:23%; top:8%;  width:2.5px; height:2.5px; opacity:.8"></i>
+      <i style="left:34%; top:22%; width:2px;   height:2px;   opacity:.55"></i>
+      <i style="left:44%; top:6%;  width:3px;   height:3px;   opacity:.85"></i>
+      <i style="left:53%; top:27%; width:2px;   height:2px;   opacity:.5"></i>
+      <i style="left:63%; top:12%; width:2.5px; height:2.5px; opacity:.75"></i>
+      <i style="left:72%; top:30%; width:2px;   height:2px;   opacity:.6"></i>
+      <i style="left:81%; top:9%;  width:3px;   height:3px;   opacity:.9"></i>
+      <i style="left:90%; top:24%; width:2px;   height:2px;   opacity:.55"></i>
+      <i style="left:96%; top:5%;  width:2.5px; height:2.5px; opacity:.7"></i>
+      <i style="left:29%; top:38%; width:1.8px; height:1.8px; opacity:.4"></i>
+      <i style="left:68%; top:41%; width:1.8px; height:1.8px; opacity:.35"></i>
+    </div>
+
+    <div class="cloud" style="left:-70px; top:104px; width:420px; height:44px; opacity:.5"></div>
+    <div class="cloud" style="left:70px;  top:82px;  width:240px; height:30px; opacity:.36"></div>
+    <div class="cloud" style="right:-60px; top:150px; width:400px; height:40px; opacity:.42"></div>
+    <div class="cloud" style="right:120px; top:126px; width:210px; height:26px; opacity:.3"></div>
+
+    <div class="sun"></div>
+
+    <div class="copy">
+      <p class="kicker">Venture Investor &middot; Builder &middot; Austin</p>
+      <h1>Sandeep Kondury</h1>
+      <div class="rule"></div>
+      <p class="thesis">&ldquo;Markets dream in language long<br />before they speak in numbers.&rdquo;</p>
+      <p class="roles">
+        Founder of <em>feat.</em><span>&middot;</span>TEDx<span>&middot;</span>TED Editor&rsquo;s Pick
+      </p>
+    </div>
+
+    <p class="url">saandeepkondury.github.io</p>
+
+    <svg class="clock" viewBox="0 0 200 182" aria-hidden="true">
+      <rect x="2" y="30" width="196" height="7" rx="3.5" fill="#3d2c1c"/>
+      <path d="M40 36
+               C 40 12, 160 12, 160 38
+               C 160 64, 155 88, 143 108
+               C 133 125, 120 134, 112 150
+               C 108 159, 106 169, 100 169
+               C 94 169, 96 156, 90 144
+               C 82 128, 59 112, 48 90
+               C 39 71, 40 52, 40 36 Z"
+            fill="#f6ecd6" stroke="#3d2c1c" stroke-width="4" stroke-linejoin="round"/>
+      <ellipse cx="100" cy="56" rx="45" ry="29" fill="none" stroke="#c9ae82" stroke-width="2"/>
+      <g stroke="#3d2c1c" stroke-width="3" stroke-linecap="round">
+        <line x1="100" y1="29" x2="100" y2="37"/>
+        <line x1="132" y1="35" x2="127" y2="41"/>
+        <line x1="143" y1="56" x2="135" y2="56"/>
+        <line x1="132" y1="77" x2="127" y2="71"/>
+        <line x1="100" y1="85" x2="100" y2="77"/>
+        <line x1="68" y1="77" x2="73" y2="71"/>
+        <line x1="57" y1="56" x2="65" y2="56"/>
+        <line x1="68" y1="35" x2="73" y2="41"/>
+      </g>
+      <g stroke="#3d2c1c" stroke-linecap="round" fill="none">
+        <path d="M100 56 C 93 64, 84 70, 74 72" stroke-width="4"/>
+        <path d="M100 56 C 107 68, 112 80, 112 92" stroke-width="4"/>
+      </g>
+      <circle cx="100" cy="56" r="4.5" fill="#3d2c1c"/>
+      <path d="M100 169 C 100 175, 102 178, 100 182 C 98 178, 100 175, 100 169 Z" fill="#3d2c1c"/>
+    </svg>
+  </div>
+</body>
+</html>
